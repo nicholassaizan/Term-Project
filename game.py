@@ -29,6 +29,7 @@ def keyPressed(event, data):
 def gameMovementKeyPressed(key,data):
     if key == 'Right': data.offsetX-= data.step
 def timerFired(data):
+    random.seed()
     if data.moving==True:data.offsetX-=2
     data.time+=data.timerDelay/1000*data.timemultiplier
     data.spawnbird = random.choice([True]+[False]*3)
