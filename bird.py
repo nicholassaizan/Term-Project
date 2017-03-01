@@ -16,10 +16,6 @@ def bird(x,y,size,vel,d,canvas,data):
     bobbing = size*0.6*math.cos(time-math.pi*(3/2))
     drawBody(xpos,ypos,size,dir,time,bobbing,canvas,data)
     drawWing(xpos,ypos,size,dir,time,bobbing,canvas,data)
-        
-        # drawGrid(canvas,data)
-        # canvas.create_oval(data.xpos-2,data.ypos-2,data.xpos+2,data.ypos+2,
-        #     fill='lightgreen')
 def drawBody(xpos,ypos,size,dir,time,bobbing,canvas,data):
     body0x=xpos+size*1.5*dir
     body0y=ypos+size*-0.75+bobbing

@@ -1,7 +1,3 @@
-# Things to do:
-#     seeds for trees
-#     adding trees
-#     making terrain
 from tkinter import *
 import random
 import bird

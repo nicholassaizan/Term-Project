@@ -1,8 +1,7 @@
 from tkinter import *
 import math,random
-# root = Tk()
-# canvas = Canvas(root, width=1000, height=1000)
-# canvas.pack()
+
+
 def tree(x,y,len,angle,seed,tinter,canvas):
     minlen=30
     def rgbString(red, green, blue):
@@ -58,5 +57,3 @@ def tree(x,y,len,angle,seed,tinter,canvas):
         # canvas.create_oval( x-radius,y-radius,x+radius,y+radius,fill=color)
         pass
     drawTree(x,y,len,angle,seed,tinter,canvas)
-    # drawTree(500,900,160,math.pi/2,random.randint(0,100),canvas)
-    # root.mainloop()
